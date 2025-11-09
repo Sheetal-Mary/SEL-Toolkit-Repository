@@ -17,14 +17,14 @@ xmlns="http://www.w3.org/TR/REC-html40">
   <o:LastAuthor>Arockiamani, Sheetal</o:LastAuthor>
   <o:Revision>1</o:Revision>
   <o:TotalTime>1</o:TotalTime>
-  <o:Created>2025-11-09T02:42:00Z</o:Created>
-  <o:LastSaved>2025-11-09T02:43:00Z</o:LastSaved>
-  <o:Pages>23</o:Pages>
-  <o:Words>3735</o:Words>
-  <o:Characters>21295</o:Characters>
-  <o:Lines>177</o:Lines>
-  <o:Paragraphs>49</o:Paragraphs>
-  <o:CharactersWithSpaces>24981</o:CharactersWithSpaces>
+  <o:Created>2025-11-09T03:00:00Z</o:Created>
+  <o:LastSaved>2025-11-09T03:01:00Z</o:LastSaved>
+  <o:Pages>25</o:Pages>
+  <o:Words>5328</o:Words>
+  <o:Characters>30373</o:Characters>
+  <o:Lines>253</o:Lines>
+  <o:Paragraphs>71</o:Paragraphs>
+  <o:CharactersWithSpaces>35630</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -1560,1792 +1560,2139 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<p class=MsoNormal>import React, <span class=GramE>{ <span class=SpellE>useState</span></span>,
-<span class=SpellE><span class=GramE>useMemo</span></span><span class=GramE> }</span>
-from 'react<span class=GramE>';</span><o:p></o:p></p>
+<p class=MsoNormal>&lt;!DOCTYPE html&gt;<o:p></o:p></p>
 
-<p class=MsoNormal>import <span class=GramE>{ Search</span>, Filter, X, <span
-class=SpellE>ThumbsUp</span>, <span class=SpellE>MessageSquare</span>, <span
-class=GramE>Send }</span> from '<span class=SpellE>lucide</span>-react<span
-class=GramE>';</span><o:p></o:p></p>
+<p class=MsoNormal>&lt;html lang=&quot;<span class=SpellE>en</span>&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal>&lt;head&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;meta
+charset=&quot;UTF-8&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;meta
+name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;title&gt;SEL
+Toolkit Dashboard - Accessible SEL Toolkits for Reparative
+Education&lt;/title&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;meta
+name=&quot;description&quot; content=&quot;Explore 11 Social Emotional Learning
+toolkits for reparative education during crisis. Find the perfect toolkit for
+your context.&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;script <span
+class=SpellE>src</span>=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;style&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=GramE>.<span class=SpellE>lucide</span></span> {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>width: <span
+class=GramE>1em;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>height: <span
+class=GramE>1em;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>stroke: <span
+class=SpellE><span class=GramE>currentColor</span></span><span class=GramE>;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>stroke-width: <span class=GramE>2;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>stroke-<span
+class=SpellE>linecap</span>: <span class=GramE>round;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>stroke-<span
+class=SpellE>linejoin</span>: <span class=GramE>round;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>fill: <span
+class=GramE>none;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=GramE>.fade</span>-in {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>animation:
+<span class=SpellE>fadeIn</span> 0.2s ease-<span class=GramE>in;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>@keyframes <span
+class=SpellE>fadeIn</span> {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>from <span
+class=GramE>{ opacity</span>: 0; transform: <span class=SpellE>translateY</span>(-10px)<span
+class=GramE>; }</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>to <span
+class=GramE>{ opacity</span>: 1; transform: <span class=SpellE><span
+class=GramE>translateY</span></span><span class=GramE>(</span>0)<span
+class=GramE>; }</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=GramE>.scrollbar</span>-<span class=GramE>thin::</span>-<span
+class=SpellE>webkit</span>-scrollbar {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>width: <span
+class=GramE>6px;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=GramE>.scrollbar</span>-<span class=GramE>thin::</span>-<span
+class=SpellE>webkit</span>-scrollbar-track {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>background: #<span class=GramE>f1f1f1;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>border-radius: <span class=GramE>10px;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=GramE>.scrollbar</span>-<span class=GramE>thin::</span>-<span
+class=SpellE>webkit</span>-scrollbar-thumb {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>background: <span class=GramE>#888;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>border-radius: <span class=GramE>10px;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=GramE>.scrollbar</span>-<span class=GramE>thin::</span>-<span
+class=SpellE>webkit-scrollbar-<span class=GramE>thumb:hover</span></span> {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>background: <span class=GramE>#555;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;/style&gt;<o:p></o:p></p>
+
+<p class=MsoNormal>&lt;/head&gt;<o:p></o:p></p>
+
+<p class=MsoNormal>&lt;body class=&quot;min-h-screen bg-gray-50&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;div
+id=&quot;app&quot;&gt;&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span class=SpellE>const</span> toolkits = [<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;script&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>const</span> toolkits = [<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name:
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
 &quot;Thriving Through Play&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers:
-[&quot;Teachers&quot;, &quot;Students&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [&quot;Teachers&quot;, &quot;Students&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment:
-[&quot;Online&quot;, &quot;Offline&quot;, &quot;Hybrid&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [&quot;Online&quot;, &quot;Offline&quot;,
+&quot;Hybrid&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Teacher capacity building and play based activities&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Teacher capacity building and play based
+activities&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Play based strategies&quot;,
 &quot;Mental Wellbeing&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://inee.org/resources/thriving-through-play-mental-health-and-psychosocial-support-classroom-approach-educators&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
 &quot;Learning and Wellbeing in Emergencies&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Teacher capacity building, activities and learner assessments&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Teacher capacity building, activities and learner
+assessments&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Reading&quot;, &quot;Literacy&quot;,
 &quot;Mental Wellbeing&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://inee.org/resources/learning-and-wellbeing-emergencies-resource-kit&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;Early
-Adolescent Skills for Emotions (EASE)&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;Early Adolescent Skills for Emotions (EASE)&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Adolescents&quot;, &quot;Young Adults&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Adolescents&quot;, &quot;Young Adults&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment:
-[&quot;Offline&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [&quot;Offline&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Guidebook for caregivers&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Guidebook for caregivers&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Mental Wellbeing&quot;, &quot;Problem
 Solving&quot;, &quot;Stress Management&quot;, &quot;Emotional
 Regulation&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://inee.org/resources/early-adolescent-skills-emotions-ease&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;Remote
-Assessment Learning (<span class=SpellE>ReAL</span>)&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;Remote Assessment Learning (<span class=SpellE>ReAL</span>)&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers:
-[&quot;Teachers&quot;, &quot;Students&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [&quot;Teachers&quot;, &quot;Students&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;, &quot;Middle School&quot;,
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;, &quot;Middle School&quot;,
 &quot;Adolescents&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment:
-[&quot;Online&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [&quot;Online&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Assessment Materials&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Assessment Materials&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Math&quot;, &quot;Literacy&quot;,
 &quot;Empathy&quot;, &quot;Stress Management&quot;, &quot;Perseverance&quot;,
 &quot;<span class=SpellE>Self Awareness</span>&quot;, &quot;Conflict
 Resolution&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://inee.org/resources/remote-assessment-learning-real-toolkit&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;SEL
-Distance Learning Activity Pack&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;SEL Distance Learning Activity Pack&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers:
-[&quot;Teachers&quot;, &quot;Students&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [&quot;Teachers&quot;, &quot;Students&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;, &quot;Middle School&quot;,
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;, &quot;Middle School&quot;,
 &quot;Adolescents&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Remote Learning Materials&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Remote Learning Materials&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Empathy&quot;, &quot;Resilience&quot;,
 &quot;Emotional Regulation&quot;, &quot;Decision Making&quot;,
 &quot;Relationships&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://resourcecentre.savethechildren.net/document/social-emotional-learning-distance-learning-activity-pack&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;UNICEF
-Learning Passport&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;UNICEF Learning Passport&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;, &quot;Middle School&quot;,
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;, &quot;Middle School&quot;,
 &quot;Adolescents&quot;, &quot;Young Adults&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Teacher and Caregiver capacity building&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Teacher and Caregiver capacity building&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Literacy&quot;, &quot;Emergency
 Preparedness&quot;, &quot;Dealing with Loss of family member&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://www.unicefusa.org/what-unicef-does/childrens-education/learning-passport&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;I
-Support My Friends Toolkit&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;I Support My Friends Toolkit&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers:
-[&quot;Family&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [&quot;Family&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Middle School&quot;, &quot;Adolescents&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Middle School&quot;, &quot;Adolescents&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Adaptable to Ukraine&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Adult facilitation manual&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Adult facilitation manual&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Emotional awareness&quot;,
 &quot;Empathy&quot;, &quot;Safe Space&quot;, &quot;Active Listening&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://inee.org/resources&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;Skills
-for Life Toolkit&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;Skills for Life Toolkit&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;, &quot;Middle School&quot;,
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;, &quot;Middle School&quot;,
 &quot;Adolescents&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Universal Context&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Universal Context&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Teacher capacity building and learner assessments&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Teacher capacity building and learner
+assessments&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Mental wellbeing&quot;,
 &quot;Health&quot;, &quot;Life Skills&quot;, &quot;Emergency
 Preparedness&quot;, &quot;Conflict Resolution&quot;, &quot;Protection&quot;,
 &quot;Safe Space&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://inee.org/resources&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;Social
-Emotional Learning Intervention&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;Social Emotional Learning Intervention&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment:
-[&quot;Hybrid&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [&quot;Hybrid&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Universal Context&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Universal Context&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Teacher capacity building&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Teacher capacity building&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Positive Social Skills&quot;,
 &quot;Emotional Regulation&quot;, &quot;Conflict Resolution&quot;,
 &quot;Perseverance&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://childprotectionpractitioners.org/wp-content/uploads/2020/08/IRC_SHLS_SEL_Trainers_Manual_08.2016_WEB.pdf&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
 &quot;Families Make a Difference&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers:
-[&quot;Community&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [&quot;Community&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;, &quot;Middle School&quot;,
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;, &quot;Middle School&quot;,
 &quot;Adolescents&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment:
-[&quot;Offline&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [&quot;Offline&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Universal Context&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Universal Context&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Caregiver curriculum for child development&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Caregiver curriculum for child development&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Parent child relationships&quot;,
 &quot;Responsive caregiving in emergencies&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://inee.org/resources&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>name: &quot;Step
-by Step Toolkit&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>name:
+&quot;Step by Step Toolkit&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>implementers: [],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>implementers: [],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>beneficiaries:
-[&quot;Early Childhood&quot;, &quot;Middle School&quot;,
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>beneficiaries: [&quot;Early Childhood&quot;, &quot;Middle School&quot;,
 &quot;Adolescents&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>environment:
-[&quot;Offline&quot;],<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>environment: [&quot;Offline&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>adaptability:
-&quot;Universal Context&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>adaptability: &quot;Universal Context&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>composition:
-&quot;Teacher Capacity Building and Learner Materials&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>               
+</span>composition: &quot;Teacher Capacity Building and Learner
+Materials&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
 class=SpellE>focusAreas</span>: [&quot;Positive Social Skills&quot;, &quot;<span
 class=SpellE>Self Awareness</span>&quot;, &quot;<span class=SpellE>Self
 Regulation</span>&quot;, &quot;Communication&quot;, &quot;Determination&quot;,
 &quot;Decision Making&quot;],<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>link:
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>link:
 &quot;https://www.mhpss.net/toolkit/mhpss-and-eie/resource/step-by-step-toolkit-promoting-social-and-emotional-learning-sel-in-children-and-teens&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
 
-<p class=MsoNormal>];<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>];<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span class=SpellE>const</span> <span class=SpellE>SELDashboard</span>
-= () =&gt; {<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>const</span> <span class=SpellE>initialUpvotes</span> = {<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>searchTerm</span>, <span class=SpellE>setSearchTerm</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>''<span
-class=GramE>);</span><o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>&quot;Thriving Through Play&quot;: 34,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>selectedBeneficiaries</span>, <span class=SpellE>setSelectedBeneficiaries</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>[]<span
-class=GramE>);</span><o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>&quot;Remote Assessment Learning (<span class=SpellE>ReAL</span>)&quot;:
+28,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>selectedImplementers</span>, <span class=SpellE>setSelectedImplementers</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>[]<span
-class=GramE>);</span><o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&quot;SEL
+Distance Learning Activity Pack&quot;: 42,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>selectedEnvironment</span>, <span class=SpellE>setSelectedEnvironment</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>[]<span
-class=GramE>);</span><o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>&quot;Skills for Life Toolkit&quot;: 51,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>selectedAdaptability</span>, <span class=SpellE>setSelectedAdaptability</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>[]<span
-class=GramE>);</span><o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&quot;Step
+by Step Toolkit&quot;: 37<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>selectedFocusAreas</span>, <span class=SpellE>setSelectedFocusAreas</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>[]<span
-class=GramE>);</span><o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>};<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>showFilters</span>, <span class=SpellE>setShowFilters</span>]
-= <span class=SpellE>useState</span>(false<span class=GramE>);</span><o:p></o:p></p>
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[upvotes, <span class=SpellE>setUpvotes</span>] = <span class=SpellE><span
-class=GramE>useState</span></span><span class=GramE>(</span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>const</span> <span class=SpellE>initialComments</span> = {<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Thriving
-Through Play&quot;: 34,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>&quot;Thriving Through Play&quot;: [<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Remote
-Assessment Learning (<span class=SpellE>ReAL</span>)&quot;: 28,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;SEL Distance
-Learning Activity Pack&quot;: 42,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;We implemented this in our kindergarten classroom in Kyiv.
+The play-based activities helped children express their emotions after
+displacement. Highly recommend the puppet <span class=SpellE>theater</span>
+activity!&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Skills for
-Life Toolkit&quot;: 51,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-15T10:30:00Z&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Step by Step
-Toolkit&quot;: 37<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 1001<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>});<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[comments, <span class=SpellE>setComments</span>] = <span class=SpellE><span
-class=GramE>useState</span></span><span class=GramE>(</span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Thriving
-Through Play&quot;: [<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text: &quot;We
-implemented this in our kindergarten classroom in Kyiv. The play-based
-activities helped children express their emotions after displacement. Highly
-recommend the puppet <span class=SpellE>theater</span> activity!&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-15T10:30:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 1001<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Used this toolkit with <span class=GramE>5-6 year olds</span> in a
-temporary learning <span class=SpellE>center</span>. The structured play
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Used this toolkit with <span class=GramE>5-6 year olds</span>
+in a temporary learning <span class=SpellE>center</span>. The structured play
 sessions gave children a sense of normalcy and routine. Parents noticed reduced
 anxiety.&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-22T14:20:00Z&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-22T14:20:00Z&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 1002<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 1002<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Adapted the activities for online sessions during power outages. The
-simple materials requirement made it feasible even with limited
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Adapted the activities for online sessions during power
+outages. The simple materials requirement made it feasible even with limited
 resources.&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-11-01T09:15:00Z&quot;,<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-11-01T09:15:00Z&quot;,<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 1003<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 1003<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>],<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Remote
-Assessment Learning (<span class=SpellE>ReAL</span>)&quot;: [<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Perfect for tracking both academic and SEL progress remotely. The
-assessment rubrics are <span class=GramE>clear</span> and the students enjoyed
-the interactive components.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-18T11:45:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 2001<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text: &quot;We
-used this across grades 1-6 in our online learning program. The literacy and
-math assessments paired beautifully with the empathy and stress management
-modules.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-25T16:30:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 2002<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>],<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;SEL Distance
-Learning Activity Pack&quot;: [<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Essential resource during remote learning! The activities are
-age-appropriate and easy to facilitate via video call. Our middle schoolers
-particularly loved the resilience-building exercises.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-12T13:20:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 3001<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Translated some activities to Ukrainian and used them in our community <span
-class=SpellE>center</span>. The relationship-building activities helped
-children reconnect after months apart.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-28T10:00:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 3002<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Great for mixed-age groups. We adapted it for siblings learning together
-at home. The emotional regulation activities were particularly helpful during
-stressful times.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-11-03T15:45:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 3003<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>],<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Skills for
-Life Toolkit&quot;: [<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Comprehensive and well-structured! We've been using this in our emergency
-education program for 6 months. The conflict resolution section is invaluable
-in our context.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-09-20T09:30:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 4001<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;The teacher capacity building component was excellent. Helped our team
-feel more confident addressing children's wellbeing alongside academic
-learning.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-05T14:15:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 4002<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Used this with early childhood through adolescent groups. The safe space
-creation guidelines helped establish trust quickly with displaced
-children.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-30T11:20:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 4003<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;The emergency preparedness activities gave children practical coping
-skills. Assessments help us track progress and identify who needs additional
-support.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-11-05T08:50:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 4004<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>],<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&quot;Step by Step
-Toolkit&quot;: [<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;Excellent for building foundational SEL skills. The self-regulation
-activities have been transformative for our younger students who experienced
-trauma.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-10T12:00:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 5001<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text: &quot;We
-integrated this into our regular curriculum. The communication and
-determination modules align perfectly with our holistic education
-approach.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-10-24T16:45:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 5002<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>},<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>text:
-&quot;The learner materials are <span class=GramE>engaging</span> and the
-teacher capacity building sessions prepared us well. Highly recommend for
-anyone working with children in crisis contexts.&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>timestamp:
-&quot;2024-11-02T10:30:00Z&quot;,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>id: 5003<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>]<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>});<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>newComment</span>, <span class=SpellE>setNewComment</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>{}<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-[<span class=SpellE>expandedComments</span>, <span class=SpellE>setExpandedComments</span>]
-= <span class=SpellE><span class=GramE>useState</span></span><span class=GramE>(</span>{}<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>allBeneficiaries</span> = [...new <span class=GramE>Set(<span
-class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span class=SpellE><span
-class=GramE>t.beneficiaries</span></span>))<span class=GramE>].sort</span>(<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>allImplementers</span> = [...new <span class=GramE>Set(<span
-class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span class=SpellE><span
-class=GramE>t.implementers</span></span>))<span class=GramE>].sort</span>(<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>allEnvironments</span> = [...new <span class=GramE>Set(<span
-class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span class=SpellE><span
-class=GramE>t.environment</span></span>))<span class=GramE>].sort</span>(<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>allAdaptability</span> = [...new <span class=GramE>Set(<span
-class=SpellE>toolkits.map</span>(</span>t =&gt; <span class=SpellE><span
-class=GramE>t.adaptability</span></span>))<span class=GramE>].sort</span>(<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>allFocusAreas</span> = [...new <span class=GramE>Set(<span
-class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span class=SpellE><span
-class=GramE>t.focusAreas</span></span>))<span class=GramE>].sort</span>(<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>filteredToolkits</span> = <span class=SpellE><span
-class=GramE>useMemo</span></span><span class=GramE>(</span>() =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>return <span
-class=SpellE><span class=GramE>toolkits.filter</span></span>(toolkit =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>matchesSearch</span> = <span
-class=SpellE><span class=GramE>toolkit.name.toLowerCase</span></span>(<span
-class=GramE>).includes</span>(<span class=SpellE>searchTerm.toLowerCase</span>())
-||<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span><span class=GramE>toolkit.composition</span>.toLowerCase(<span
-class=GramE>).includes</span>(searchTerm.toLowerCase()) ||<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span><span class=SpellE><span class=GramE>toolkit.focusAreas.some</span></span>(area
-=&gt; <span class=SpellE><span class=GramE>area.toLowerCase</span></span>(<span
-class=GramE>).includes</span>(<span class=SpellE>searchTerm.toLowerCase</span>())<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>matchesBeneficiaries</span> = <span
-class=SpellE>selectedBeneficiaries.length</span> === 0 || <o:p></o:p></p>
-
-<p class=MsoNormal><span
-style='mso-spacerun:yes'>                                   </span><span
-class=SpellE>selectedBeneficiaries.some</span>(b =&gt; <span class=SpellE><span
-class=GramE>toolkit.beneficiaries</span>.includes</span>(b)<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>matchesImplementers</span> = <span
-class=SpellE>selectedImplementers.length</span> === 0 || <o:p></o:p></p>
-
-<p class=MsoNormal><span
-style='mso-spacerun:yes'>                                  </span><span
-class=SpellE>selectedImplementers.some</span>(<span class=SpellE>i</span> =&gt;
-<span class=SpellE><span class=GramE>toolkit.implementers</span>.includes</span>(<span
-class=SpellE>i</span>)<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>matchesEnvironment</span> = <span
-class=SpellE>selectedEnvironment.length</span> === 0 || <o:p></o:p></p>
-
-<p class=MsoNormal><span
-style='mso-spacerun:yes'>                                </span><span
-class=SpellE>selectedEnvironment.some</span>(e =&gt; <span class=SpellE><span
-class=GramE>toolkit.environment</span>.includes</span>(e)<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>matchesAdaptability</span> = <span
-class=SpellE>selectedAdaptability.length</span> === 0 || <o:p></o:p></p>
-
-<p class=MsoNormal><span
-style='mso-spacerun:yes'>                                 </span><span
-class=SpellE>selectedAdaptability.includes</span>(<span class=SpellE><span
-class=GramE>toolkit.adaptability</span></span><span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>matchesFocusAreas</span> = <span
-class=SpellE>selectedFocusAreas.length</span> === 0 || <o:p></o:p></p>
-
-<p class=MsoNormal><span
-style='mso-spacerun:yes'>                               </span><span
-class=SpellE>selectedFocusAreas.some</span>(f =&gt; <span class=SpellE><span
-class=GramE>toolkit.focusAreas.includes</span></span>(f)<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>return <span
-class=SpellE>matchesSearch</span> &amp;&amp; <span class=SpellE>matchesBeneficiaries</span>
-&amp;&amp; <span class=SpellE>matchesImplementers</span> &amp;&amp; <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>             </span><span
-class=SpellE>matchesEnvironment</span> &amp;&amp; <span class=SpellE>matchesAdaptability</span>
-&amp;&amp; <span class=SpellE><span class=GramE>matchesFocusAreas</span></span><span
-class=GramE>;</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>});<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>}, [<span
-class=SpellE>searchTerm</span>, <span class=SpellE>selectedBeneficiaries</span>,
-<span class=SpellE>selectedImplementers</span>, <span class=SpellE>selectedEnvironment</span>,
-<span class=SpellE>selectedAdaptability</span>, <span class=SpellE>selectedFocusAreas</span>]<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>toggleFilter</span> = (value, selected, <span class=SpellE>setSelected</span>)
-=&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>if (<span
-class=SpellE><span class=GramE>selected.includes</span></span>(value)) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>setSelected</span></span><span class=GramE>(<span
-class=SpellE>selected.filter</span></span>(v =&gt; <span class=GramE>v !</span>==
-value)<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>} else {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>setSelected</span></span><span class=GramE>(</span>[...selected,
-value]<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>clearAllFilters</span> = () =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setSearchTerm</span></span><span class=GramE>(</span>''<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setSelectedBeneficiaries</span></span><span
-class=GramE>(</span>[]<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setSelectedImplementers</span></span><span
-class=GramE>(</span>[]<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setSelectedEnvironment</span></span><span
-class=GramE>(</span>[]<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setSelectedAdaptability</span></span><span
-class=GramE>(</span>[]<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setSelectedFocusAreas</span></span><span
-class=GramE>(</span>[]<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>handleUpvote</span> = (<span class=SpellE>toolkitName</span>)
-=&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setUpvotes</span></span><span class=GramE>(</span><span
-class=SpellE>prev</span> =&gt; ({<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>...<span
-class=SpellE>prev</span>,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>[<span
-class=SpellE>toolkitName</span>]: (<span class=SpellE>prev</span>[<span
-class=SpellE>toolkitName</span>] || 0) + 1<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}));<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>handleAddComment</span> = (<span class=SpellE>toolkitName</span>)
-=&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>if (<span
-class=SpellE>newComment</span>[<span class=SpellE>toolkitName</span><span
-class=GramE>]?.trim(</span>)) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>setComments</span></span><span class=GramE>(</span><span
-class=SpellE>prev</span> =&gt; ({<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>...<span
-class=SpellE>prev</span>,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>[<span
-class=SpellE>toolkitName</span>]: [<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>...(<span
-class=SpellE>prev</span>[<span class=SpellE>toolkitName</span>] || []),<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>text: <span
-class=SpellE>newComment</span>[<span class=SpellE>toolkitName</span>],<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>timestamp:
-new Date(<span class=GramE>).<span class=SpellE>toISOString</span></span>(),<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>id: <span
-class=SpellE><span class=GramE>Date.now</span></span><span class=GramE>(</span>)<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>]<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}));<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>setNewComment</span></span><span class=GramE>(</span><span
-class=SpellE>prev</span> =&gt; <span class=GramE>({ ...</span><span
-class=SpellE>prev</span>, [<span class=SpellE>toolkitName</span>]: '<span
-class=GramE>' }</span>)<span class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>toggleComments</span> = (<span class=SpellE>toolkitName</span>)
-=&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setExpandedComments</span></span><span
-class=GramE>(</span><span class=SpellE>prev</span> =&gt; ({<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>...<span
-class=SpellE>prev</span>,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>[<span
-class=SpellE>toolkitName</span>]<span class=GramE>: !<span class=SpellE>prev</span></span>[<span
-class=SpellE>toolkitName</span>]<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}));<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>activeFilterCount</span> = <span class=SpellE>selectedBeneficiaries.length</span>
-+ <span class=SpellE>selectedImplementers.length</span> + <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                          
-</span><span class=SpellE>selectedEnvironment.length</span> + <span
-class=SpellE>selectedAdaptability.length</span> + <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                          
-</span><span class=SpellE>selectedFocusAreas.<span class=GramE>length</span></span><span
-class=GramE>;</span><o:p></o:p></p>
-
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>const</span>
-<span class=SpellE>FilterSection</span> = <span class=GramE>({ title</span>,
-options, selected, <span class=SpellE><span class=GramE>setSelected</span></span><span
-class=GramE> }</span>) =&gt; (<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;div <span
-class=SpellE>className</span>=&quot;mb-4&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>&lt;h3 <span
-class=SpellE>className</span>=&quot;font-semibold text-<span class=SpellE>sm</span>
-text-gray-700 mb-2&quot;&gt;{title}&lt;/h3&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>&lt;div <span
-class=SpellE>className</span>=&quot;flex flex-wrap gap-2&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>{<span
-class=SpellE><span class=GramE>options.map</span></span><span class=GramE>(</span>option
-=&gt; (<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&lt;button<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>],<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>           
-</span>key={option}<o:p></o:p></p>
+</span>&quot;Remote Assessment Learning (<span class=SpellE>ReAL</span>)&quot;:
+[<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Perfect for tracking both academic and SEL progress
+remotely. The assessment rubrics are <span class=GramE>clear</span> and the
+students enjoyed the interactive components.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-18T11:45:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 2001<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;We used this across grades 1-6 in our online learning
+program. The literacy and math assessments paired beautifully with the empathy
+and stress management modules.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-25T16:30:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 2002<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&quot;SEL
+Distance Learning Activity Pack&quot;: [<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Essential resource during remote learning! The activities
+are age-appropriate and easy to facilitate via video call. Our middle schoolers
+particularly loved the resilience-building exercises.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-12T13:20:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 3001<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Translated some activities to Ukrainian and used them in our
+community <span class=SpellE>center</span>. The relationship-building
+activities helped children reconnect after months apart.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-28T10:00:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 3002<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Great for mixed-age groups. We adapted it for siblings
+learning together at home. The emotional regulation activities were
+particularly helpful during stressful times.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-11-03T15:45:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 3003<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>           
+</span>&quot;Skills for Life Toolkit&quot;: [<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Comprehensive and well-structured! We've been using this in
+our emergency education program for 6 months. The conflict resolution section
+is invaluable in our context.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-09-20T09:30:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 4001<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;The teacher capacity building component was excellent.
+Helped our team feel more confident addressing children's wellbeing alongside
+academic learning.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-05T14:15:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 4002<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Used this with early childhood through adolescent groups.
+The safe space creation guidelines helped establish trust quickly with
+displaced children.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-30T11:20:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 4003<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;The emergency preparedness activities gave children
+practical coping skills. Assessments help us track progress and identify who
+needs additional support.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-11-05T08:50:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 4004<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&quot;Step
+by Step Toolkit&quot;: [<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;Excellent for building foundational SEL skills. The
+self-regulation activities have been transformative for our younger students
+who experienced trauma.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-10T12:00:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 5001<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;We integrated this into our regular curriculum. The
+communication and determination modules align perfectly with our holistic
+education approach.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-10-24T16:45:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 5002<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>text: &quot;The learner materials are <span class=GramE>engaging</span>
+and the teacher capacity building sessions prepared us well. Highly recommend
+for anyone working with children in crisis contexts.&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>timestamp: &quot;2024-11-02T10:30:00Z&quot;,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>id: 5003<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>]<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>};<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=SpellE>const</span> icons = {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>search:
+'&lt;<span class=SpellE>svg</span> class=&quot;<span class=SpellE>lucide</span>&quot;
+<span class=SpellE>viewBox</span>=&quot;0 0 24 24&quot;&gt;&lt;circle
+cx=&quot;11&quot; cy=&quot;11&quot; r=&quot;8&quot;&gt;&lt;/circle&gt;&lt;path
+d=&quot;m21 21-4.35-4.35&quot;&gt;&lt;/path&gt;&lt;/<span class=SpellE>svg</span>&gt;',<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>filter:
+'&lt;<span class=SpellE>svg</span> class=&quot;<span class=SpellE>lucide</span>&quot;
+<span class=SpellE>viewBox</span>=&quot;0 0 24 24&quot;&gt;&lt;polygon
+points=&quot;22 3 2 3 10 12.46 10 19 14 21 14 12.46 22
+3&quot;&gt;&lt;/polygon&gt;&lt;/<span class=SpellE>svg</span>&gt;',<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>x: '&lt;<span
+class=SpellE>svg</span> class=&quot;<span class=SpellE>lucide</span>&quot; <span
+class=SpellE>viewBox</span>=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;M18 6 6
+18&quot;&gt;&lt;/path&gt;&lt;path d=&quot;m6 6 12
+12&quot;&gt;&lt;/path&gt;&lt;/<span class=SpellE>svg</span>&gt;',<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
-class=SpellE>onClick</span><span class=GramE>={</span>() =&gt; <span
-class=SpellE><span class=GramE>toggleFilter</span></span><span class=GramE>(</span>option,
-selected, <span class=SpellE>setSelected</span>)}<o:p></o:p></p>
+class=SpellE>thumbsUp</span>: '&lt;<span class=SpellE>svg</span> class=&quot;<span
+class=SpellE>lucide</span>&quot; <span class=SpellE>viewBox</span>=&quot;0 0 24
+24&quot;&gt;&lt;path d=&quot;M7 10v12&quot;&gt;&lt;/path&gt;&lt;path
+d=&quot;M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2
+0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3
+3.88Z&quot;&gt;&lt;/path&gt;&lt;/<span class=SpellE>svg</span>&gt;',<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
-class=SpellE>className</span><span class=GramE>={</span>`px-3 py-1 rounded-full
-text-<span class=SpellE>xs</span> transition-<span class=SpellE>colors</span>
-${<o:p></o:p></p>
+class=SpellE>messageSquare</span>: '&lt;<span class=SpellE>svg</span>
+class=&quot;<span class=SpellE>lucide</span>&quot; <span class=SpellE>viewBox</span>=&quot;0
+0 24 24&quot;&gt;&lt;path d=&quot;M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1
+2-2h14a2 2 0 0 1 2 2z&quot;&gt;&lt;/path&gt;&lt;/<span class=SpellE>svg</span>&gt;',<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span><span
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>send:
+'&lt;<span class=SpellE>svg</span> class=&quot;<span class=SpellE>lucide</span>&quot;
+<span class=SpellE>viewBox</span>=&quot;0 0 24 24&quot;&gt;&lt;path d=&quot;m22
+2-7 20-4-9-9-4Z&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M22 2 11
+13&quot;&gt;&lt;/path&gt;&lt;/<span class=SpellE>svg</span>&gt;'<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>};<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>class <span
+class=SpellE>SELDashboard</span> {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=GramE>constructor(</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span></span> = {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>searchTerm</span>: '',<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>selectedBeneficiaries</span>: [],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>selectedImplementers</span>: [],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>selectedEnvironment</span>: [],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>selectedAdaptability</span>: [],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>selectedFocusAreas</span>: [],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>showFilters</span>: false,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>upvotes: <span class=GramE>{ ...<span class=SpellE>initialUpvotes</span>
+}</span>,<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>comments: <span class=SpellE>JSON.parse</span>(<span class=SpellE>JSON.stringify</span>(<span
+class=SpellE>initialComments</span>)),<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>newComment</span>: {},<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>expandedComments</span>: {}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>};<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.allBeneficiaries</span></span> = [...new <span
+class=GramE>Set(<span class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span
+class=SpellE><span class=GramE>t.beneficiaries</span></span>))<span
+class=GramE>].sort</span>(<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.allImplementers</span></span> = [...new <span
+class=GramE>Set(<span class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span
+class=SpellE><span class=GramE>t.implementers</span></span>))<span class=GramE>].sort</span>(<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.allEnvironments</span></span> = [...new <span
+class=GramE>Set(<span class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span
+class=SpellE><span class=GramE>t.environment</span></span>))<span class=GramE>].sort</span>(<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.allAdaptability</span></span> = [...new <span
+class=GramE>Set(<span class=SpellE>toolkits.map</span>(</span>t =&gt; <span
+class=SpellE><span class=GramE>t.adaptability</span></span>))<span class=GramE>].sort</span>(<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.allFocusAreas</span></span> = [...new <span
+class=GramE>Set(<span class=SpellE>toolkits.flatMap</span></span>(t =&gt; <span
+class=SpellE><span class=GramE>t.focusAreas</span></span>))<span class=GramE>].sort</span>(<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.render</span></span>(<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=SpellE><span class=GramE>getFilteredToolkits</span></span><span
+class=GramE>(</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>return
+<span class=SpellE><span class=GramE>toolkits.filter</span></span>(toolkit
+=&gt; {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>const</span> <span class=SpellE>matchesSearch</span> = <span
+class=GramE>toolkit.name.toLowerCase</span>(<span class=GramE>).includes</span>(<span
+class=GramE>this.state</span>.searchTerm.toLowerCase()) ||<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=GramE>toolkit.composition</span>.toLowerCase(<span
+class=GramE>).includes</span>(<span class=GramE>this.state</span>.searchTerm.toLowerCase())
+||<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE><span class=GramE>toolkit.focusAreas.some</span></span>(area
+=&gt; <span class=GramE>area.toLowerCase</span>(<span class=GramE>).includes</span>(<span
+class=GramE>this.state</span>.searchTerm.toLowerCase())<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>const</span> <span class=SpellE>matchesBeneficiaries</span> = <span
+class=SpellE><span class=GramE>this.state</span>.selectedBeneficiaries.length</span>
+=== 0 || <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE><span class=GramE>this.state</span>.selectedBeneficiaries.some</span>(b
+=&gt; <span class=SpellE><span class=GramE>toolkit.beneficiaries</span>.includes</span>(b)<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>const</span> <span class=SpellE>matchesImplementers</span> = <span
+class=SpellE><span class=GramE>this.state</span>.selectedImplementers.length</span>
+=== 0 || <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE><span class=GramE>this.state</span>.selectedImplementers.some</span>(<span
+class=SpellE>i</span> =&gt; <span class=SpellE><span class=GramE>toolkit.implementers</span>.includes</span>(<span
+class=SpellE>i</span>)<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>const</span> <span class=SpellE>matchesEnvironment</span> = <span
+class=SpellE><span class=GramE>this.state</span>.selectedEnvironment.length</span>
+=== 0 || <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE><span class=GramE>this.state</span>.selectedEnvironment.some</span>(e
+=&gt; <span class=SpellE><span class=GramE>toolkit.environment</span>.includes</span>(e)<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>const</span> <span class=SpellE>matchesAdaptability</span> = <span
+class=SpellE><span class=GramE>this.state</span>.selectedAdaptability.length</span>
+=== 0 || <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE><span class=GramE>this.state</span>.selectedAdaptability.includes</span>(<span
+class=SpellE><span class=GramE>toolkit.adaptability</span></span><span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE>const</span> <span class=SpellE>matchesFocusAreas</span> = <span
+class=SpellE><span class=GramE>this.state</span>.selectedFocusAreas.length</span>
+=== 0 || <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE><span class=GramE>this.state</span>.selectedFocusAreas.some</span>(f
+=&gt; <span class=SpellE><span class=GramE>toolkit.focusAreas.includes</span></span>(f)<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>return <span class=SpellE>matchesSearch</span> &amp;&amp; <span
+class=SpellE>matchesBeneficiaries</span> &amp;&amp; <span class=SpellE>matchesImplementers</span>
+&amp;&amp; <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE>matchesEnvironment</span> &amp;&amp; <span
+class=SpellE>matchesAdaptability</span> &amp;&amp; <span class=SpellE><span
+class=GramE>matchesFocusAreas</span></span><span class=GramE>;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>});<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=SpellE><span class=GramE>toggleFilter</span></span><span class=GramE>(</span>value,
+<span class=SpellE>filterType</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE>const</span> selected = <span class=SpellE><span class=GramE>this.state</span></span>[<span
+class=SpellE>filterType</span><span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>if (<span
+class=SpellE><span class=GramE>selected.includes</span></span>(value)) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span></span>[<span class=SpellE>filterType</span>]
+= <span class=SpellE><span class=GramE>selected.filter</span></span>(v =&gt; <span
+class=GramE>v !</span>== value<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>} else
+{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span></span>[<span class=SpellE>filterType</span>]
+= [...selected, value<span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.render</span></span>(<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=SpellE><span class=GramE>clearAllFilters</span></span><span class=GramE>(</span>)
+{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.searchTerm</span> = '<span
+class=GramE>';</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedBeneficiaries</span> =
+[<span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedImplementers</span> =
+[<span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedEnvironment</span> = [<span
+class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedAdaptability</span> =
+[<span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedFocusAreas</span> = [<span
+class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.render</span></span>(<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=SpellE>handleUpvote</span>(<span class=SpellE>toolkitName</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.upvotes</span>[<span
+class=SpellE>toolkitName</span>] = (<span class=SpellE><span class=GramE>this.state</span>.upvotes</span>[<span
+class=SpellE>toolkitName</span>] || 0) + <span class=GramE>1;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.render</span></span>(<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=SpellE>handleAddComment</span>(<span class=SpellE>toolkitName</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>if (<span
+class=SpellE><span class=GramE>this.state</span>.newComment</span>[<span
+class=SpellE>toolkitName</span><span class=GramE>]?.trim(</span>)) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>if
+<span class=GramE>(!<span class=SpellE>this</span></span><span class=SpellE>.<span
+class=GramE>state.comments</span></span>[<span class=SpellE>toolkitName</span>])
+{<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span><span class=SpellE><span class=GramE>this.state</span>.comments</span>[<span
+class=SpellE>toolkitName</span>] = [<span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span>.comments</span>[<span
+class=SpellE>toolkitName</span><span class=GramE>].push</span>({<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>text: <span class=SpellE><span class=GramE>this.state</span>.newComment</span>[<span
+class=SpellE>toolkitName</span>],<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>timestamp: new Date(<span class=GramE>).<span class=SpellE>toISOString</span></span>(),<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>id: <span class=SpellE><span class=GramE>Date.now</span></span><span
+class=GramE>(</span>)<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>});<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span>.newComment</span>[<span
+class=SpellE>toolkitName</span>] = '<span class=GramE>';</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.render</span></span>(<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=SpellE>toggleComments</span>(<span class=SpellE>toolkitName</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.state</span>.expandedComments</span>[<span
+class=SpellE>toolkitName</span>] <span class=GramE>= !<span class=SpellE>this</span></span><span
+class=SpellE>.<span class=GramE>state.expandedComments</span></span>[<span
+class=SpellE>toolkitName</span><span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>this.render</span></span>(<span class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=SpellE><span class=GramE>renderFilterSection</span></span><span
+class=GramE>(</span>title, options, <span class=SpellE>filterType</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE>const</span> selected = <span class=SpellE><span class=GramE>this.state</span></span>[<span
+class=SpellE>filterType</span><span class=GramE>];</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>return
+`<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>&lt;div class=&quot;mb-4&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>&lt;h3 class=&quot;font-semibold text-<span class=SpellE>sm</span>
+text-gray-700 mb-2&quot;&gt;${title}&lt;/h3&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>&lt;div class=&quot;flex flex-wrap gap-2&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>${<span class=SpellE><span class=GramE>options.map</span></span><span
+class=GramE>(</span>option =&gt; `<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>&lt;button<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                   
+</span>onclick=&quot;<span class=SpellE><span class=GramE>dashboard.toggleFilter</span></span>('${option}',
+'${<span class=SpellE>filterType</span>}')&quot;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                   
+</span>class=&quot;px-3 py-1 rounded-full text-<span class=SpellE>xs</span>
+transition-<span class=SpellE>colors</span> ${<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span><span
 class=SpellE><span class=GramE>selected.includes</span></span>(option)<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>? '<span
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>? '<span
 class=GramE>bg</span>-blue-600 text-white'<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>:
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>:
 'bg-gray-100 text-gray-700 hover:bg-gray-200'<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}`}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>}&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{option}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>${option}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>         
-</span>&lt;/button&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>&lt;/button&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>))}<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>`<span class=GramE>).join</span>('')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>);<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>`;<o:p></o:p></p>
 
-<p class=MsoNormal><o:p>&nbsp;</o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>return (<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;div <span
-class=SpellE>className</span>=&quot;min-h-screen bg-gray-50 p-6&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>&lt;div <span
-class=SpellE>className</span>=&quot;max-w-7xl mx-auto&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;div <span
-class=SpellE>className</span>=&quot;mb-8&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&lt;h1 <span
-class=SpellE>className</span>=&quot;text-3xl font-bold text-gray-900
-mb-2&quot;&gt;Accessible SEL Toolkits for Reparative Education during
-Crisis&lt;/h1&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&lt;p <span
-class=SpellE>className</span>=&quot;text-gray-600&quot;&gt;Explore 11 Social
-Emotional Learning toolkits and find the perfect fit for your context&lt;/p&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;div <span
-class=SpellE>className</span>=&quot;<span class=SpellE>bg</span>-white rounded-<span
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
+class=GramE>render(</span>) {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE>const</span> <span class=SpellE>filteredToolkits</span> = <span
+class=SpellE><span class=GramE>this.getFilteredToolkits</span></span>(<span
+class=GramE>);</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE>const</span> <span class=SpellE>activeFilterCount</span> = <span
+class=SpellE><span class=GramE>this.state</span>.selectedBeneficiaries.length</span>
++ <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedImplementers.length</span>
++ <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedEnvironment.length</span>
++ <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedAdaptability.length</span>
++ <o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
+class=SpellE><span class=GramE>this.state</span>.selectedFocusAreas.<span
+class=GramE>length</span></span><span class=GramE>;</span><o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE>const</span> html = `<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+</span>&lt;div class=&quot;p-6&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>&lt;div class=&quot;max-w-7xl mx-auto&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;div class=&quot;mb-8&quot;&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>&lt;h1
+class=&quot;text-3xl font-bold text-gray-900 mb-2&quot;&gt;Accessible SEL
+Toolkits for Reparative Education during Crisis&lt;/h1&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>&lt;p
+class=&quot;text-gray-600&quot;&gt;Explore 11 Social Emotional Learning
+toolkits and find the perfect fit for your context&lt;/p&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;/div&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;div class=&quot;<span class=SpellE>bg</span>-white rounded-<span
 class=SpellE>lg</span> shadow-<span class=SpellE>sm</span> p-4 mb-6&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&lt;div <span
-class=SpellE>className</span>=&quot;flex gap-3 items-<span class=SpellE>center</span>&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>&lt;div
+class=&quot;flex gap-3 items-<span class=SpellE>center</span>
+flex-wrap&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;div <span
-class=SpellE>className</span>=&quot;flex-1 relative&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>&lt;div
+class=&quot;flex-1 relative min-w-64&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
-</span>&lt;Search <span class=SpellE>className</span>=&quot;absolute left-3 <span
-class=GramE>top-1</span>/2 transform -translate-y-1/2 text-gray-400 w-5
-h-5&quot; /&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
+</span>&lt;span class=&quot;absolute left-3 <span class=GramE>top-1</span>/2
+transform -translate-y-1/2 text-gray-400&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>${<span
+class=SpellE><span class=GramE>icons.search</span></span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
+</span>&lt;/span&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
 </span>&lt;input<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>type=&quot;text&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>placeholder=&quot;Search toolkits by name, focus area, or
 composition...&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>value={<span class=SpellE>searchTerm</span>}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>value=&quot;${<span class=SpellE><span class=GramE>this.state</span>.searchTerm</span>}&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>onChange</span>={(e) =&gt; <span class=SpellE>setSearchTerm</span>(<span
-class=SpellE><span class=GramE>e.target</span>.value</span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span><span
+class=SpellE>oninput</span>=&quot;<span class=SpellE><span class=GramE>dashboard.state</span>.searchTerm</span>
+= <span class=SpellE>this.value</span>; <span class=SpellE><span class=GramE>dashboard.render</span></span>();&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>className</span>=&quot;w-full pl-10 pr-4 py-2 border
-border-gray-300 rounded-<span class=SpellE>lg</span> <span class=SpellE><span
-class=GramE>focus:outline</span>-none</span> <span class=GramE>focus:ring</span>-2
-<span class=GramE>focus:ring</span>-blue-500&quot;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>class=&quot;w-full pl-10 pr-4 py-2 border border-gray-300 rounded-<span
+class=SpellE>lg</span> <span class=SpellE><span class=GramE>focus:outline</span>-none</span>
+<span class=GramE>focus:ring</span>-2 <span class=GramE>focus:ring</span>-blue-500&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>/&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>/&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>           
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                   
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;button<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>&lt;button<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span><span
-class=SpellE>onClick</span><span class=GramE>={</span>() =&gt; <span
-class=SpellE>setShowFilters</span><span class=GramE>(!<span class=SpellE>showFilters</span></span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
+</span>onclick=&quot;<span class=SpellE><span class=GramE>dashboard.state</span>.showFilters</span>
+<span class=GramE>= !<span class=SpellE>dashboard</span></span><span
+class=SpellE>.<span class=GramE>state.showFilters</span></span>; <span
+class=SpellE><span class=GramE>dashboard.render</span></span>();&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span><span
-class=SpellE>className</span>=&quot;flex items-<span class=SpellE>center</span>
-gap-2 px-4 py-2 bg-blue-600 text-white rounded-<span class=SpellE>lg</span>
-hover:bg-blue-700 transition-<span class=SpellE>colors</span>&quot;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
+</span>class=&quot;flex items-<span class=SpellE>center</span> gap-2 px-4 py-2
+bg-blue-600 text-white rounded-<span class=SpellE>lg</span> hover:bg-blue-700
+transition-<span class=SpellE>colors</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
-</span>&lt;Filter <span class=SpellE>className</span>=&quot;w-4 h-4&quot; /&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE><span class=GramE>icons.filter</span></span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>Filters<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>Filters<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>{<span
-class=SpellE>activeFilterCount</span> &gt; 0 &amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE>activeFilterCount</span> &gt; <span class=GramE>0 ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>&lt;span <span class=SpellE>className</span>=&quot;<span class=SpellE>bg</span>-white
-text-blue-600 rounded-full px-2 py-0.5 text-<span class=SpellE>xs</span>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>&lt;span class=&quot;<span class=SpellE>bg</span>-white text-blue-600
+rounded-full px-2 py-0.5 text-<span class=SpellE>xs</span>
 font-semibold&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                  </span>{<span
-class=SpellE>activeFilterCount</span>}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>${<span class=SpellE>activeFilterCount</span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>` : ''}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>           
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                   
 </span>&lt;/button&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>{<span
-class=SpellE>activeFilterCount</span> &gt; 0 &amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>${<span
+class=SpellE>activeFilterCount</span> &gt; <span class=GramE>0 ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
 </span>&lt;button<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>onClick</span>={<span class=SpellE>clearAllFilters</span>}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>onclick=&quot;<span class=SpellE><span class=GramE>dashboard.clearAllFilters</span></span>()&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>className</span>=&quot;flex items-<span class=SpellE>center</span>
-gap-2 px-4 py-2 bg-gray-200 text-gray-700 rounded-<span class=SpellE>lg</span>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>class=&quot;flex items-<span class=SpellE>center</span> gap-2 px-4 py-2
+bg-gray-200 text-gray-700 rounded-<span class=SpellE>lg</span>
 hover:bg-gray-300 transition-<span class=SpellE>colors</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>&lt;X <span
-class=SpellE>className</span>=&quot;w-4 h-4&quot; /&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>${<span
+class=SpellE>icons.x</span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>Clear<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>Clear<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
 </span>&lt;/button&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>` : ''}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>{<span
-class=SpellE>showFilters</span> &amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>${<span
+class=SpellE><span class=GramE>this.state</span>.<span class=GramE>showFilters</span></span><span
+class=GramE> ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;div <span
-class=SpellE>className</span>=&quot;mt-4 pt-4 border-t
-border-gray-200&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>&lt;div
+class=&quot;mt-4 pt-4 border-t border-gray-200 fade-in&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;<span
-class=SpellE>FilterSection</span> <o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE><span class=GramE>this.renderFilterSection</span></span>('Beneficiaries',
+<span class=SpellE><span class=GramE>this.allBeneficiaries</span></span>, '<span
+class=SpellE>selectedBeneficiaries</span>')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>title=&quot;Beneficiaries&quot; <o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE><span class=GramE>this.renderFilterSection</span></span>('Implementers',
+<span class=SpellE><span class=GramE>this.allImplementers</span></span>, '<span
+class=SpellE>selectedImplementers</span>')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>options={<span class=SpellE>allBeneficiaries</span>} <o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE><span class=GramE>this.renderFilterSection</span></span>('Environment',
+<span class=SpellE><span class=GramE>this.allEnvironments</span></span>, '<span
+class=SpellE>selectedEnvironment</span>')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>selected={<span class=SpellE>selectedBeneficiaries</span>} <o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE><span class=GramE>this.renderFilterSection</span></span>('Adaptability',
+<span class=SpellE><span class=GramE>this.allAdaptability</span></span>, '<span
+class=SpellE>selectedAdaptability</span>')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>setSelected</span>={<span class=SpellE>setSelectedBeneficiaries</span>}
-<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE><span class=GramE>this.renderFilterSection</span></span>('Focus
+Areas', <span class=SpellE><span class=GramE>this.allFocusAreas</span></span>,
+'<span class=SpellE>selectedFocusAreas</span>')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>/&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;<span
-class=SpellE>FilterSection</span> <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>title=&quot;Implementers&quot; <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>options={<span class=SpellE>allImplementers</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>selected={<span class=SpellE>selectedImplementers</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>setSelected</span>={<span class=SpellE>setSelectedImplementers</span>}
-<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>/&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;<span
-class=SpellE>FilterSection</span> <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>title=&quot;Environment&quot; <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>options={<span class=SpellE>allEnvironments</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>selected={<span class=SpellE>selectedEnvironment</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>setSelected</span>={<span class=SpellE>setSelectedEnvironment</span>}
-<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>/&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;<span
-class=SpellE>FilterSection</span> <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>title=&quot;Adaptability&quot; <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>options={<span class=SpellE>allAdaptability</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>selected={<span class=SpellE>selectedAdaptability</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>setSelected</span>={<span class=SpellE>setSelectedAdaptability</span>}
-<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>/&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;<span
-class=SpellE>FilterSection</span> <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>title=&quot;Focus Areas&quot; <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>options={<span class=SpellE>allFocusAreas</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>selected={<span class=SpellE>selectedFocusAreas</span>} <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>setSelected</span>={<span class=SpellE>setSelectedFocusAreas</span>}
-<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>/&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>           
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                   
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>` : ''}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;div <span
-class=SpellE>className</span>=&quot;mb-4 text-<span class=SpellE>sm</span>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;div class=&quot;mb-4 text-<span class=SpellE>sm</span>
 text-gray-600&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>Showing
-&lt;span <span class=SpellE>className</span>=&quot;font-semibold&quot;&gt;{<span
-class=SpellE><span class=GramE>filteredToolkits.length</span></span><span
-class=GramE>}&lt;</span>/span&gt; of &lt;span <span class=SpellE>className</span>=&quot;font-semibold&quot;&gt;{<span
-class=SpellE><span class=GramE>toolkits.length</span></span>}&lt;/span&gt;
-toolkits<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>Showing
+&lt;span class=&quot;font-semibold&quot;&gt;${<span class=SpellE><span
+class=GramE>filteredToolkits.length</span></span><span class=GramE>}&lt;</span>/span&gt;
+of &lt;span class=&quot;font-semibold&quot;&gt;${<span class=SpellE><span
+class=GramE>toolkits.length</span></span>}&lt;/span&gt; toolkits<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;div <span
-class=SpellE>className</span>=&quot;grid grid-cols-1 <span class=GramE>md:grid</span>-cols-2
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;div class=&quot;grid grid-cols-1 <span class=GramE>md:grid</span>-cols-2
 <span class=GramE>lg:grid</span>-cols-3 gap-6&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>{<span
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>${<span
 class=SpellE><span class=GramE>filteredToolkits.map</span></span><span
-class=GramE>(</span>(toolkit, index) =&gt; (<o:p></o:p></p>
+class=GramE>(</span>(toolkit, index) =&gt; `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;div
-key={index} <span class=SpellE>className</span>=&quot;<span class=SpellE>bg</span>-white
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                    </span>&lt;div
+key=&quot;${index}&quot; class=&quot;<span class=SpellE>bg</span>-white
 rounded-<span class=SpellE>lg</span> shadow-<span class=SpellE>sm</span> <span
 class=SpellE><span class=GramE>hover:shadow</span>-md</span> transition-shadow
 p-6 flex flex-col&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;div <span
-class=SpellE>className</span>=&quot;flex items-start justify-between
-mb-3&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>&lt;div
+class=&quot;flex items-start justify-between mb-3&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>&lt;h3
-<span class=SpellE>className</span>=&quot;text-<span class=SpellE>lg</span>
-font-bold text-gray-900 flex-1&quot;&gt;{<span class=GramE>toolkit.name}&lt;</span>/h3&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>&lt;h3 class=&quot;text-<span class=SpellE>lg</span> font-bold
+text-gray-900 flex-1&quot;&gt;${<span class=GramE>toolkit.name}&lt;</span>/h3&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>&lt;div <span class=SpellE>className</span>=&quot;flex items-<span
-class=SpellE>center</span> gap-2 ml-2&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>&lt;div class=&quot;flex items-<span class=SpellE>center</span> gap-2
+ml-2&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;button<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
-class=SpellE>onClick</span><span class=GramE>={</span>() =&gt; <span
-class=SpellE>handleUpvote</span>(toolkit.name)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>onclick=&quot;<span class=SpellE><span class=GramE>dashboard.handleUpvote</span></span>('${<span
+class=SpellE><span class=GramE>toolkit.name.replace</span></span>(/'/g,
+&quot;\\'&quot;)}')&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
-class=SpellE>className</span>=&quot;flex items-<span class=SpellE>center</span>
-gap-1 bg-blue-50 text-blue-600 px-2 py-1 rounded-full hover:bg-blue-100
-transition-<span class=SpellE>colors</span>&quot;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>class=&quot;flex items-<span class=SpellE>center</span> gap-1 bg-blue-50
+text-blue-600 px-2 py-1 rounded-full hover:bg-blue-100 transition-<span
+class=SpellE>colors</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                  </span>&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;<span class=SpellE>ThumbsUp</span> <span class=SpellE>className</span>=&quot;w-3
-h-3&quot; /&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>${<span class=SpellE><span class=GramE>icons.thumbsUp</span></span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;span <span class=SpellE>className</span>=&quot;text-<span
-class=SpellE>xs</span> font-semibold&quot;&gt;{upvotes[toolkit.name] || <span
-class=GramE>0}&lt;</span>/span&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;span class=&quot;text-<span class=SpellE>xs</span>
+font-semibold&quot;&gt;${<span class=SpellE><span class=GramE>this.state</span>.upvotes</span>[toolkit.name]
+|| <span class=GramE>0}&lt;</span>/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;/button&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;button<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
-class=SpellE>onClick</span><span class=GramE>={</span>() =&gt; <span
-class=SpellE>toggleComments</span>(toolkit.name)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>onclick=&quot;<span class=SpellE><span class=GramE>dashboard.toggleComments</span></span>('${<span
+class=SpellE><span class=GramE>toolkit.name.replace</span></span>(/'/g,
+&quot;\\'&quot;)}')&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
-class=SpellE>className</span>=&quot;flex items-<span class=SpellE>center</span>
-gap-1 bg-gray-50 text-gray-600 px-2 py-1 rounded-full hover:bg-gray-100
-transition-<span class=SpellE>colors</span>&quot;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>class=&quot;flex items-<span class=SpellE>center</span> gap-1 bg-gray-50
+text-gray-600 px-2 py-1 rounded-full hover:bg-gray-100 transition-<span
+class=SpellE>colors</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                  </span>&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;<span class=SpellE>MessageSquare</span> <span class=SpellE>className</span>=&quot;w-3
-h-3&quot; /&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>${<span class=SpellE><span class=GramE>icons.messageSquare</span></span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;span <span class=SpellE>className</span>=&quot;text-<span
-class=SpellE>xs</span> font-semibold&quot;&gt;{comments[toolkit.name]<span
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;span class=&quot;text-<span class=SpellE>xs</span>
+font-semibold&quot;&gt;${<span class=SpellE><span class=GramE>this.state</span>.comments</span>[toolkit.name]<span
 class=GramE>?.length</span> || <span class=GramE>0}&lt;</span>/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;/button&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span><o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span><o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;div <span
-class=SpellE>className</span>=&quot;space-y-3 text-<span class=SpellE>sm</span>&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>&lt;div
+class=&quot;space-y-3 text-<span class=SpellE>sm</span>&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<span
-class=SpellE><span class=GramE>toolkit.beneficiaries</span>.length</span> &gt;
-0 &amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>${<span
+class=SpellE><span class=GramE>toolkit.beneficiaries</span>.length</span> &gt; <span
+class=GramE>0 ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;span <span class=SpellE>className</span>=&quot;font-semibold
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;span class=&quot;font-semibold
 text-gray-700&quot;&gt;Beneficiaries:&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;div <span class=SpellE>className</span>=&quot;flex flex-wrap gap-1
-mt-1&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;div class=&quot;flex flex-wrap gap-1 mt-1&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>{<span class=SpellE><span class=GramE>toolkit.beneficiaries.map</span></span><span
-class=GramE>(</span>(b, <span class=SpellE>i</span>) =&gt; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>${<span class=SpellE><span class=GramE>toolkit.beneficiaries.map</span></span><span
+class=GramE>(</span>b =&gt; `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>&lt;span key={<span class=SpellE>i</span>} <span class=SpellE>className</span>=&quot;bg-purple-100
-text-purple-700 px-2 py-0.5 rounded text-<span class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
+</span>&lt;span class=&quot;bg-purple-100 text-purple-700 px-2 py-0.5 rounded
+text-<span class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span>{b}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                               
+</span>${b}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
 </span>&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>))}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>`<span class=GramE>).join</span>('')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>` :
+''}<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<span
-class=SpellE><span class=GramE>toolkit.implementers</span>.length</span> &gt; 0
-&amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>${<span
+class=SpellE><span class=GramE>toolkit.implementers</span>.length</span> &gt; <span
+class=GramE>0 ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;span <span class=SpellE>className</span>=&quot;font-semibold
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;span class=&quot;font-semibold
 text-gray-700&quot;&gt;Implementers:&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;div <span class=SpellE>className</span>=&quot;flex flex-wrap gap-1
-mt-1&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;div class=&quot;flex flex-wrap gap-1 mt-1&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>{<span class=SpellE><span class=GramE>toolkit.implementers.map</span></span><span
-class=GramE>(</span>(<span class=SpellE>i</span>, <span class=SpellE>idx</span>)
-=&gt; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>${<span class=SpellE><span class=GramE>toolkit.implementers.map</span></span><span
+class=GramE>(</span><span class=SpellE>i</span> =&gt; `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>&lt;span key={<span class=SpellE>idx</span>} <span class=SpellE>className</span>=&quot;bg-green-100
-text-green-700 px-2 py-0.5 rounded text-<span class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
+</span>&lt;span class=&quot;bg-green-100 text-green-700 px-2 py-0.5 rounded
+text-<span class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span>{<span class=SpellE>i</span>}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                               
+</span>${<span class=SpellE>i</span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
 </span>&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>))}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>`<span class=GramE>).join</span>('')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>` :
+''}<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>{<span
-class=SpellE><span class=GramE>toolkit.environment</span>.length</span> &gt; 0
-&amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>${<span
+class=SpellE><span class=GramE>toolkit.environment</span>.length</span> &gt; <span
+class=GramE>0 ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;span <span class=SpellE>className</span>=&quot;font-semibold
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;span class=&quot;font-semibold
 text-gray-700&quot;&gt;Environment:&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;div <span class=SpellE>className</span>=&quot;flex flex-wrap gap-1
-mt-1&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;div class=&quot;flex flex-wrap gap-1 mt-1&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>{<span class=SpellE><span class=GramE>toolkit.environment.map</span></span><span
-class=GramE>(</span>(e, <span class=SpellE>i</span>) =&gt; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>${<span class=SpellE><span class=GramE>toolkit.environment.map</span></span><span
+class=GramE>(</span>e =&gt; `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>&lt;span key={<span class=SpellE>i</span>} <span class=SpellE>className</span>=&quot;bg-blue-100
-text-blue-700 px-2 py-0.5 rounded text-<span class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
+</span>&lt;span class=&quot;bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-<span
+class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span>{e}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                               
+</span>${e}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
 </span>&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>))}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>`<span class=GramE>).join</span>('')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span>` :
+''}<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;span <span class=SpellE>className</span>=&quot;font-semibold
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;span class=&quot;font-semibold
 text-gray-700&quot;&gt;Adaptability:&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;span <span class=SpellE>className</span><span class=GramE>={</span>`ml-2
-px-2 py-0.5 rounded text-<span class=SpellE>xs</span> ${<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;span class=&quot;${<span class=SpellE><span class=GramE>toolkit.adaptability</span></span>
+=== 'Adaptable to Ukraine' <o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span><span
-class=SpellE><span class=GramE>toolkit.adaptability</span></span> ===
-'Adaptable to Ukraine' <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>? '<span class=GramE>bg</span>-orange-100 text-orange-700' <o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>: 'bg-teal-100 text-teal-700'<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>: 'bg-teal-100 text-teal-700'} ml-2 px-2 py-0.5 rounded text-<span
+class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>}`}&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>${<span class=SpellE><span class=GramE>toolkit.adaptability</span></span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>{<span
-class=SpellE><span class=GramE>toolkit.adaptability</span></span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;span <span class=SpellE>className</span>=&quot;font-semibold
-text-gray-700&quot;&gt;Toolkit Composition:&lt;/span&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;span class=&quot;font-semibold text-gray-700&quot;&gt;Toolkit
+Composition:&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;p <span class=SpellE>className</span>=&quot;text-gray-600
-mt-1&quot;&gt;{<span class=SpellE><span class=GramE>toolkit.composition</span></span>}&lt;/p&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;p class=&quot;text-gray-600 mt-1&quot;&gt;${<span class=SpellE><span
+class=GramE>toolkit.composition</span></span>}&lt;/p&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;span <span class=SpellE>className</span>=&quot;font-semibold
-text-gray-700&quot;&gt;Focus Areas:&lt;/span&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;span class=&quot;font-semibold text-gray-700&quot;&gt;Focus
+Areas:&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;div <span class=SpellE>className</span>=&quot;flex flex-wrap gap-1
-mt-1&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;div class=&quot;flex flex-wrap gap-1 mt-1&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                    </span>{<span
-class=SpellE><span class=GramE>toolkit.focusAreas.map</span></span><span
-class=GramE>(</span>(area, <span class=SpellE>i</span>) =&gt; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>${<span class=SpellE><span class=GramE>toolkit.focusAreas.map</span></span><span
+class=GramE>(</span>area =&gt; `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>&lt;span key={<span class=SpellE>i</span>} <span class=SpellE>className</span>=&quot;bg-gray-100
-text-gray-700 px-2 py-0.5 rounded text-<span class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>&lt;span class=&quot;bg-gray-100 text-gray-700 px-2 py-0.5 rounded text-<span
+class=SpellE>xs</span>&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>{area}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
+</span>${area}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
 </span>&lt;/span&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>))}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>`<span class=GramE>).join</span>('')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
 </span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&lt;a<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>&lt;a<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>href</span>={<span class=SpellE><span class=GramE>toolkit.link</span></span>}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span><span
+class=SpellE>href</span>=&quot;${<span class=SpellE><span class=GramE>toolkit.link</span></span>}&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
 </span>target=&quot;_blank&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                            </span><span
 class=SpellE>rel</span>=&quot;<span class=SpellE>noopener</span> <span
 class=SpellE>noreferrer</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
-class=SpellE>className</span>=&quot;mt-4 block w-full text-<span class=SpellE>center</span>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>class=&quot;mt-4 block w-full text-<span class=SpellE>center</span>
 bg-blue-600 text-white py-2 rounded-<span class=SpellE>lg</span>
 hover:bg-blue-700 transition-<span class=SpellE>colors</span> font-semibold
 text-<span class=SpellE>sm</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>Access
-Toolkit<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>Access Toolkit<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>             
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                       
 </span>&lt;/a&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>{<span
-class=SpellE>expandedComments</span>[toolkit.name] &amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>${<span
+class=SpellE><span class=GramE>this.state</span>.expandedComments</span>[toolkit.name<span
+class=GramE>] ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>&lt;div <span class=SpellE>className</span>=&quot;mt-4 pt-4 border-t
-border-gray-200&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>&lt;div class=&quot;mt-4 pt-4 border-t border-gray-200 fade-in&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;h4 <span class=SpellE>className</span>=&quot;font-semibold text-<span
-class=SpellE>sm</span> text-gray-700 mb-3&quot;&gt;Community
-Feedback&lt;/h4&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;h4 class=&quot;font-semibold text-<span class=SpellE>sm</span>
+text-gray-700 mb-3&quot;&gt;Community Feedback&lt;/h4&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                  </span><o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span><o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>{comments[toolkit.name] &amp;&amp; comments[toolkit.name<span
-class=GramE>].length</span> &gt; 0 &amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>${<span class=SpellE><span class=GramE>this.state</span>.comments</span>[toolkit.name]
+&amp;&amp; <span class=SpellE><span class=GramE>this.state</span>.comments</span>[toolkit.name<span
+class=GramE>].length</span> &gt; <span class=GramE>0 ?</span> `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;div <span class=SpellE>className</span>=&quot;space-y-2 mb-3
-max-h-48 overflow-y-auto&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;div class=&quot;space-y-2 mb-3 max-h-48 overflow-y-auto
+scrollbar-thin&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>{comments[toolkit.name<span class=GramE>].map</span>((comment) =&gt; (<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>${<span class=SpellE><span class=GramE>this.state</span>.comments</span>[toolkit.name<span
+class=GramE>].map</span>(comment =&gt; `<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>&lt;div key={comment.id} <span class=SpellE>className</span>=&quot;bg-gray-50
-p-3 rounded text-<span class=SpellE>sm</span>&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
+</span>&lt;div class=&quot;bg-gray-50 p-3 rounded text-<span class=SpellE>sm</span>&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span>&lt;p <span class=SpellE>className</span>=&quot;text-gray-700&quot;&gt;{<span
-class=SpellE>comment.<span class=GramE>text</span></span><span class=GramE>}&lt;</span>/p&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                               
+</span>&lt;p class=&quot;text-gray-700&quot;&gt;${<span class=SpellE>comment.<span
+class=GramE>text</span></span><span class=GramE>}&lt;</span>/p&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span>&lt;p <span class=SpellE>className</span>=&quot;text-<span class=SpellE>xs</span>
-text-gray-500 mt-1&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                               
+</span>&lt;p class=&quot;text-<span class=SpellE>xs</span> text-gray-500
+mt-1&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                           
-</span>{new Date(<span class=SpellE><span class=GramE>comment.timestamp</span></span><span
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                                   
+</span>${new Date(<span class=SpellE><span class=GramE>comment.timestamp</span></span><span
 class=GramE>).<span class=SpellE>toLocaleDateString</span></span>()}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                               
 </span>&lt;/p&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                           
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>))}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>`<span class=GramE>).join</span>('')}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                  </span>)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>` : ''}<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
-</span>&lt;div <span class=SpellE>className</span>=&quot;flex gap-2&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;div class=&quot;flex gap-2&quot;&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>&lt;input<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
 </span>type=&quot;text&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
 </span>placeholder=&quot;Share how you used this toolkit...&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>value={<span class=SpellE>newComment</span>[toolkit.name] || ''}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>value=&quot;${<span class=SpellE><span class=GramE>this.state</span>.newComment</span>[toolkit.name]
+|| ''}&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                      </span><span
-class=SpellE>onChange</span>={(e) =&gt; <span class=SpellE><span class=GramE>setNewComment</span></span><span
-class=GramE>(</span><span class=SpellE>prev</span> =&gt; ({<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>oninput=&quot;<span class=GramE>dashboard.state</span>.<span
+class=GramE>newComment[</span>'${<span class=GramE>toolkit.name.replace</span>(/'/g,
+&quot;\\'&quot;)}'] = <span class=SpellE>this.value</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>...<span class=SpellE>prev</span>,<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span><span class=SpellE>onkeypress</span>=&quot;<span class=GramE>if(</span><span
+class=SpellE>event.key</span> === 'Enter') <span class=SpellE><span
+class=GramE>dashboard.handleAddComment</span></span>('${<span class=SpellE><span
+class=GramE>toolkit.name.replace</span></span>(/'/g, &quot;\\'&quot;)}')&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>[toolkit.name]: <span class=SpellE><span class=GramE>e.target</span>.value</span><o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>class=&quot;flex-1 px-3 py-2 border border-gray-300 rounded-<span
+class=SpellE>lg</span> text-<span class=SpellE>sm</span> <span class=SpellE><span
+class=GramE>focus:outline</span>-none</span> <span class=GramE>focus:ring</span>-2
+<span class=GramE>focus:ring</span>-blue-500&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>}))}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                      </span><span
-class=SpellE>onKeyPress</span>={(e) =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>if (<span class=SpellE>e.key</span> === 'Enter') {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                         
-</span><span class=SpellE>handleAddComment</span>(toolkit.name<span
-class=GramE>);</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                       
-</span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>}}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                      </span><span
-class=SpellE>className</span>=&quot;flex-1 px-3 py-2 border border-gray-300
-rounded text-<span class=SpellE>sm</span> <span class=SpellE><span class=GramE>focus:outline</span>-none</span>
-<span class=GramE>focus:ring</span>-2 <span class=GramE>focus:ring</span>-blue-500&quot;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>/&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>&lt;button<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                      </span><span
-class=SpellE>onClick</span><span class=GramE>={</span>() =&gt; <span
-class=SpellE>handleAddComment</span>(toolkit.name)}<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>onclick=&quot;<span class=GramE>dashboard.handleAddComment</span>('${<span
+class=GramE>toolkit.name.replace</span>(/'/g, &quot;\\'&quot;)}')&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                      </span><span
-class=SpellE>className</span>=&quot;bg-blue-600 text-white p-2 rounded
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>class=&quot;bg-blue-600 text-white p-2 rounded-<span class=SpellE>lg</span>
 hover:bg-blue-700 transition-<span class=SpellE>colors</span>&quot;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                   
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
 </span>&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>                     
-</span>&lt;Send <span class=SpellE>className</span>=&quot;w-4 h-4&quot; /&gt;<o:p></o:p></p>
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                       
+</span>${<span class=SpellE><span class=GramE>icons.send</span></span>}<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                                   
+</span>&lt;/button&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                               
+</span>&lt;/div&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                           
+</span>&lt;/div&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                        </span>` : ''}<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                   
+</span>&lt;/div&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span
+style='mso-spacerun:yes'>                                </span>`<span
+class=GramE>).join</span>('')}<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                           
+</span>&lt;/div&gt;<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                       
+</span>&lt;/div&gt;<o:p></o:p></p>
 
 <p class=MsoNormal><span style='mso-spacerun:yes'>                   
-</span>&lt;/button&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>                 
 </span>&lt;/div&gt;<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>               
-</span>&lt;/div&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>)}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>           
-</span>&lt;/div&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>))}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>&lt;/div&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>`;<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>{<span
-class=SpellE>filteredToolkits.length</span> === 0 &amp;&amp; (<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span><span
+class=SpellE><span class=GramE>document.getElementById</span></span>('app'<span
+class=GramE>).<span class=SpellE>innerHTML</span></span> = <span class=GramE>html;</span><o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&lt;div <span
-class=SpellE>className</span>=&quot;text-<span class=SpellE>center</span>
-py-12&quot;&gt;<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
 
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;p <span
-class=SpellE>className</span>=&quot;text-gray-500 text-<span class=SpellE>lg</span>&quot;&gt;No
-toolkits match your current <span class=GramE>filters.&lt;</span>/p&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&lt;button<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span><span
-class=SpellE>onClick</span>={<span class=SpellE>clearAllFilters</span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span><span
-class=SpellE>className</span>=&quot;mt-4 text-blue-600 hover:text-blue-700
-font-semibold&quot;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>Clear
-all filters<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>           
-</span>&lt;/button&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>&lt;/div&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>)}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>&lt;/div&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;/div&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>);<o:p></o:p></p>
-
-<p class=MsoNormal>};<o:p></o:p></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>export default <span class=SpellE><span class=GramE>SELDashboard</span></span><span
-class=GramE>;</span></p>
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>let <span
+class=GramE>dashboard;</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
+class=SpellE><span class=GramE>document.addEventListener</span></span>('<span
+class=SpellE>DOMContentLoaded</span>', () =&gt; {<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>dashboard
+= new <span class=SpellE><span class=GramE>SELDashboard</span></span><span
+class=GramE>();</span><o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>});<o:p></o:p></p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;/script&gt;<o:p></o:p></p>
+
+<p class=MsoNormal>&lt;/body&gt;<o:p></o:p></p>
+
+<p class=MsoNormal>&lt;/html&gt;</p>
 
 </div>
 
